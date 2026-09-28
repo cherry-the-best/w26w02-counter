@@ -2,16 +2,27 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>카운터</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>뽀모도로 타이머</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>카운터</h1>
-  <div id="count">0</div>
-  <button id="dec">- 1</button>
-  <button id="reset">Reset</button>
-  <button id="inc">+ 1</button>
+  <div class="timer-card">
+    <h1 id="mode-title">작업 시간</h1>
+    <div id="timer-display">25:00</div>
+    
+    <div class="controls">
+      <button id="start-btn">시작</button>
+      <button id="pause-btn" disabled>일시정지</button>
+      <button id="reset-btn">리셋</button>
+    </div>
 
-  <script src="script.js"></script>
+    <div class="mode-switch">
+      <button id="work-mode-btn" class="active">작업 (25분)</button>
+      <button id="break-mode-btn">휴식 (5분)</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
